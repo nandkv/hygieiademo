@@ -12,7 +12,7 @@ node {
       }
    }
    stage('Unit Test') {
-      archive 'target/*.jar'
+      echo "Testing"
    }
    stage('Sonar') {
       if (isUnix()) {
